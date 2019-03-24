@@ -1,0 +1,20 @@
+PODS:
+  - Floaty (4.1.0)
+  - FSPagerView (0.8.1)
+
+DEPENDENCIES:
+  - Floaty
+  - FSPagerView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Floaty
+    - FSPagerView
+
+SPEC CHECKSUMS:
+  Floaty: 1a4e213f3512cf3045ef9cb0c1ff456226d1f66a
+  FSPagerView: 4e865526acc0b0e3077e2abb29b8d10a9f395476
+
+PODFILE CHECKSUM: 51c70cf8b446ff67a5d40c163ea96c20f10de900
+
+COCOAPODS: 1.5.2

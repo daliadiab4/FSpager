@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  pager
 //
-//  Created by admin on 3/21/19.
+//  Created by DaliaDiab on 3/21/19.
 //  Copyright © 2019 DaliaDiab. All rights reserved.
 //
 

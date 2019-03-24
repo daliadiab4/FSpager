@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E587CFD2B9CA79D17650C86 /* Pods_pager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1274F0F998058CDBE9810E4 /* Pods_pager.framework */; };
 		841C61E62243D57700BE586B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C61E52243D57700BE586B /* AppDelegate.swift */; };
 		841C61E82243D57700BE586B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C61E72243D57700BE586B /* ViewController.swift */; };
 		841C61EB2243D57700BE586B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841C61E92243D57700BE586B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A45E9AED8280CA6E00A4DBF /* Pods-pager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pager/Pods-pager.debug.xcconfig"; sourceTree = "<group>"; };
 		841C61E22243D57700BE586B /* pager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841C61E52243D57700BE586B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		841C61E72243D57700BE586B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		841C61EC2243D57900BE586B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841C61EF2243D57900BE586B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841C61F12243D57900BE586B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E65B829B56DB0A9F5FD8D9 /* Pods-pager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pager.release.xcconfig"; path = "Pods/Target Support Files/Pods-pager/Pods-pager.release.xcconfig"; sourceTree = "<group>"; };
+		E1274F0F998058CDBE9810E4 /* Pods_pager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E587CFD2B9CA79D17650C86 /* Pods_pager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3623371D1704ECC7FD59A515 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A45E9AED8280CA6E00A4DBF /* Pods-pager.debug.xcconfig */,
+				A9E65B829B56DB0A9F5FD8D9 /* Pods-pager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		841C61D92243D57700BE586B = {
 			isa = PBXGroup;
 			children = (
 				841C61E42243D57700BE586B /* pager */,
 				841C61E32243D57700BE586B /* Products */,
+				3623371D1704ECC7FD59A515 /* Pods */,
+				CFCD101455615D278755E28D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = pager;
 			sourceTree = "<group>";
 		};
+		CFCD101455615D278755E28D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1274F0F998058CDBE9810E4 /* Pods_pager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841C61F42243D57900BE586B /* Build configuration list for PBXNativeTarget "pager" */;
 			buildPhases = (
+				5BB9137C3E00DAFD4E4B928A /* [CP] Check Pods Manifest.lock */,
 				841C61DE2243D57700BE586B /* Sources */,
 				841C61DF2243D57700BE586B /* Frameworks */,
 				841C61E02243D57700BE586B /* Resources */,
+				16A0F1B0E497BD94437B2A50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16A0F1B0E497BD94437B2A50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pager/Pods-pager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pager/Pods-pager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB9137C3E00DAFD4E4B928A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		841C61DE2243D57700BE586B /* Sources */ = {
@@ -280,6 +347,7 @@
 		};
 		841C61F52243D57900BE586B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A45E9AED8280CA6E00A4DBF /* Pods-pager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +365,7 @@
 		};
 		841C61F62243D57900BE586B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E65B829B56DB0A9F5FD8D9 /* Pods-pager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
